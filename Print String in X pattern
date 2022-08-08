@@ -1,0 +1,10 @@
+value=input()
+#pl denotes pattern length
+pl=len(value)
+for row in range(pl):
+    for column in range(pl):
+        if(row==column)or((row+column)==pl-1):
+            print('{0}'.format(value[column]),end="")
+        else:
+            print(" ",end="")
+    print()
